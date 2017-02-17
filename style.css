@@ -1,5 +1,5 @@
-html {
-  background: black url('https://images-assets.nasa.gov/image/PIA20051/PIA20051~orig.jpg') no-repeat center center fixed;
+body {
+  background: black url('black-hole.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -54,6 +54,7 @@ html {
 
 /* hide back of pane during swap */
 .front, .back {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     position: absolute;
@@ -75,18 +76,18 @@ html {
 
 .box {
   background: rgba(100,100,100,0.3);
-  height:30vh;
+  height:20em;
   border-style: solid;
   border-width: 1px;
   border-color: rgba(0,0,0,0.3);
 }
 
 .columns {
-  height:33vh;
+  height:23em;
 }
 
 .is-up {
-  margin-top: -10vh;
+  margin-top: -10em;
 }
 
 .is-centred {
@@ -102,7 +103,7 @@ html {
 }
 
 .is-left {
-  margin-left: 5vh;
+  margin-left: 3em;
 }
 
 .front .title {
@@ -122,3 +123,4 @@ html {
 .back .content {
     color: rgb(155,255,155);
 }
+
