@@ -1,0 +1,120 @@
+html {
+  background: black url('https://images-assets.nasa.gov/image/PIA20051/PIA20051~orig.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero {
+  background: linear-gradient(rgba(155,0,0,0.1), rgba(0,0,255,0.1)) !important;
+}
+.hero-main {
+  background: rgba(0,0,255,0.1) !important;
+  height:100vh;
+}
+
+
+#main-title {
+  margin-top: 40%;
+  margin-right: 20%;
+}
+#sub-title {
+  margin-top: -2%;
+  margin-right: 15%;
+}
+.is-shining:hover{
+    -webkit-stroke-width: 5.3px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 1px 0px 20px yellow;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000px;
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+.flip-container, .front, .back {
+    width: 320px;
+    height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.box {
+  background: rgba(100,100,100,0.3);
+  height:30vh;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,0.3);
+}
+
+.columns {
+  height:33vh;
+}
+
+.is-up {
+  margin-top: -10vh;
+}
+
+.is-centred {
+  margin-top: 30%;
+}
+
+.content {
+  color: white;
+}
+
+.is-extralarge {
+  font-size: 1000%;
+}
+
+.is-left {
+  margin-left: 5vh;
+}
+
+.front .title {
+  color: white !important;
+  text-shadow: 1px 0px 20px rgba(0,255,0,0.5);
+}
+
+.title {
+  text-shadow: 1px 0px 20px rgba(0,255,0,0.4);
+}
+
+.textarea {
+  background: rgba(0,0,0,0.6) !important;
+  color: rgb(0,255,0) !important;
+}
