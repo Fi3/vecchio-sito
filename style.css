@@ -97,8 +97,8 @@ html {
   color: white;
 }
 
-.is-extralarge {
-  font-size: 127;
+.biglogo {
+  font-size: 127 !important;
 }
 
 .is-left {
